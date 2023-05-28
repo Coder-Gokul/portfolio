@@ -230,7 +230,8 @@ span{
     padding: 45px 30px;
     background-color: var(--bg-color);
     border-radius: 0.8rem;
-    border: 1px solid transparent;
+    border: 3px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(240, 234, 234, 0.12) 0px -12px 30px, rgba(234, 224, 224, 0.12) 0px 4px 6px, rgba(210, 189, 189, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     cursor: pointer;
     transition: all ease .50s;
 }
@@ -268,7 +269,7 @@ span{
 }
 .service-box:hover{
     transform: translateY(-8px);
-    border: 1px solid #4e5055;
+    border: 3px solid #4e5055;
 }
 
 /* Contact Section */
