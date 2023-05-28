@@ -35,6 +35,9 @@ body{
     background-color: var(--bg-color);
 
 }
+
+/* Header section */
+
 header{
     position: fixed;
     top: 0;
@@ -49,10 +52,16 @@ header{
     border-bottom: 1px solid transparent;
     transition: all ease 0.50s;
 }
+
+/* Logo */
+
 .logo img{
     width: 80%;
     height: auto;
 }
+
+/* Navbar Section */
+
 .navlist{
     display: flex;
  
@@ -94,8 +103,11 @@ header{
     display: none;
 }
 section{
-    padding: 120px 19% 100px;
+    padding: 120px 10% 100px;
 }
+
+/* Home section */
+
 .home{
     position: relative;
     min-height: 100vh;
@@ -151,6 +163,9 @@ header.sticky{
     background: #000;
     border-bottom: 1px solid #4e5055;
 }
+
+/* About Section */
+
 .about{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
@@ -184,6 +199,9 @@ span{
      line-height: 30px;
      margin-bottom: 3rem;
 }
+
+/* Service Section */
+
 .service{
     background: var(--second-bg-color);
 }
@@ -253,6 +271,8 @@ span{
     border: 1px solid #4e5055;
 }
 
+/* Contact Section */
+
 .contact{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,auto));
@@ -309,6 +329,7 @@ span{
     line-height: 30px;
 }
 
+/* End Section */
 .end-section{
     padding: 80px 19% 70px;
     background: var(--second-bg-color);
@@ -347,6 +368,7 @@ span{
     background: transparent;
     border: 2px solid var(--main-color);
 }
+/* Scroll Button */
 .scroll-btn i{
     position: fixed;
     right: 2.2rem;
@@ -357,6 +379,8 @@ span{
     padding: 9px;
     border-radius: 0.8rem;
 }
+
+/* Media Query */
 
 @media (max-width:1600px){
     .home{
@@ -369,9 +393,6 @@ span{
     }
     header.sticky{
         padding: 8px 4%;
-    }
-    section{
-        padding: 100px 5%;
     }
 }
 
@@ -462,6 +483,28 @@ span{
         width: 10%;
         height: 4px;
     }
+    :root{
+        --h1-font:3.8rem;
+        --h2-font:2.2rem;
+        --p-font:15px;
+    }
+    .home-text h4{
+        font-size: 18px;
+        word-spacing: 10px;
+        margin-bottom: 30px;
+    }
+    .home-text h3{
+        font-size: 26px;
+    }
+    .in i{
+        font-size: 80px;
+    }
+    .in h4{
+        font-size: 20px;
+    }
+    .btn{
+        padding: 10px 20px;
+    }
 }
 
 @media (max-width:660px) {
@@ -471,9 +514,9 @@ span{
         background-size: calc(90%); 
     }
     :root{
-        --h1-font:3.8rem;
+        --h1-font:3rem;
         --h2-font:2.7rem;
-        --p-font:15px;
+        --p-font:12px;
     }
     .right-contact{
         text-align: center;
@@ -482,12 +525,18 @@ span{
     text-align: center;
    }
     .home-text h4{
-        font-size: 18px;
+        font-size: .9rem;
         word-spacing: 10px;
         margin-bottom: 30px;
     }
+    .home-text h3{
+        font-size: 1.2rem;
+    }
     .btn{
-        padding: 10px 35px;
+        padding: 10px 15px;
+    }
+    .logo img{
+        width: 60%;
     }
     .left-contact{
         gap:3rem;
@@ -511,8 +560,30 @@ span{
         background-size: calc(90%);
     }
     :root{
-        --h1-font:3rem;
-        --h2-font:2.5rem;
+        --h1-font:2rem;
+        --h2-font:1.7rem;
+        --p-font:10px;
+    }
+    .home-text h3{
+        font-size: .8rem;
+    }
+   .about h5{
+    font-size: 15px;
+   }
+   .service h4{
+    font-size: 15px;
+   }
+   .service-box p{
+    font-size: 12px;
+   }
+    .btn{
+        padding: 5px 10px;
+    }
+    .scroll-btn i{
+        padding: 5px;
+    }
+    .logo img{
+        width: 60%;
     }
     .right-contact{
         text-align: center;
@@ -521,7 +592,7 @@ span{
     text-align: center;
    }
     .home-text h4{
-        font-size: 16px;
+        font-size: 12px;
         word-spacing: 7px;
     }
     .end-icons{
@@ -531,5 +602,23 @@ span{
         bottom: 2px;
         width: 18%;
         height: 4px;
+    }
+    .navlist{
+        padding: 0;
+    }
+    .navlist a{
+        font-size: 15px;
+    }
+    .in i{
+        font-size: 50px;
+    }
+    .in h4{
+        font-size: 15px;
+    }
+    .right-contact a{
+        font-size: 12px;
+    }
+    .end-section h3{
+        font-size: 20px;
     }
 }
