@@ -56,7 +56,7 @@ header{
 /* Logo */
 
 .logo img{
-    width: 80%;
+    width: 55%;
     height: auto;
 }
 
@@ -112,11 +112,12 @@ section{
     position: relative;
     min-height: 100vh;
     width: 100%;
-    background:url(assets/images/bg1.png);
+    background:url(assets/images/bg.png);
     background-color:black;
-    background-size: calc(50%);
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position:calc(70%);
+    background-position-y:80px;
+    background-position-x: center;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -131,7 +132,9 @@ section{
 .home-text h1{
     font-family: 'Dosis', sans-serif;
     font-size:var(--h1-font);
-    color: var(--main-color);
+    background: linear-gradient(to left, white, var(--main-color));
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
     font-weight: 800;
     margin-bottom: 20px;
     letter-spacing: 2px;
@@ -204,6 +207,7 @@ span{
 
 .service{
     background: var(--second-bg-color);
+    width: 100%;
 }
 .text-center{
     text-align: center;
@@ -392,9 +396,7 @@ span{
 
 @media (max-width:1600px){
     .home{
-        min-height:100vh;
-        background-position:calc(100%);
-        background-size: calc(50%);  
+        background-position-x:650px;
     }
     header{
         padding: 14px 4%;
@@ -408,10 +410,11 @@ span{
 }
 
 @media (max-width:1200px) {
+    .logo img{
+        width: 50%;
+    }
     .home{
-        min-height:90vh;
-        background-position:calc(100%);
-        background-size: calc(60%);  
+        background-position-x:450px;
     }
     .service h4{
         font-size: 17px;
@@ -426,9 +429,11 @@ span{
     }
 }
 @media (max-width:1060px) {
+    .logo img{
+        width: 45%;
+    }
     .home{
-        background-position:calc(100%);
-        background-size: calc(70%); 
+        background-position-x:400px;
     }
     .service h4{
         font-size: 18px;
@@ -462,9 +467,17 @@ span{
     }
 }
 @media (max-width:870px) {
+    .logo img{
+        width: 40%;
+    }
+    #menu-icon{
+        font-size: 40px;
+    }
+    .open a{
+        font-size: 18px !important;
+    }
     .home{
-        background-position:calc(150%);
-        background-size: calc(80%); 
+        background-position-x:300px;
     }
     .service h4{
         font-size: 14px;
@@ -528,10 +541,19 @@ span{
 }
 
 @media (max-width:660px) {
+    
+    .logo img{
+        width: 35% !important;
+    }
+    #menu-icon{
+        font-size: 35px;
+    }
+    .open a{
+        font-size: 15px !important;
+    }
     .home{
-        min-height: 80vh;
-        background-position:calc(280%);
-        background-size: calc(90%); 
+        min-height: 100vh;
+        background-position-x:250px;
     }
     :root{
         --h1-font:3rem;
@@ -578,9 +600,18 @@ span{
 }
 
 @media (max-width:460px) {
+    .logo img{
+        width: 30% !important;
+    }
+    #menu-icon{
+        font-size: 25px;
+    }
+    .open a{
+        font-size: 12px !important;
+    }
     .home{
-        background-position:calc(300%);
-        background-size: calc(90%);
+        min-height: 80vh;
+        background-position-x:150px;
     }
     :root{
         --h1-font:2rem;
@@ -596,8 +627,17 @@ span{
    .service h4{
     font-size: 15px;
    }
+   .service-item{
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+   }
+   .contact{
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+   }
    .service-box p{
     font-size: 12px;
+   }
+   .service-box{
+    margin: auto;
    }
     .btn{
         padding: 5px 10px;
@@ -633,15 +673,18 @@ span{
         font-size: 15px;
     }
     .in i{
-        font-size: 50px;
+        font-size: 40px;
     }
     .in h4{
-        font-size: 15px;
+        font-size: 12px;
     }
     .right-contact a{
         font-size: 12px;
     }
     .end-section h3{
         font-size: 20px;
+    }
+    .left-contact{
+        gap: 1.5rem;
     }
 }
