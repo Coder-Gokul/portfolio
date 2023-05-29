@@ -1,4 +1,4 @@
-<body style="align-items:center">
+<body style="text-align:center">
   <h1>My Portfolio Website</h1>
   <center><h3>Desktop View</h3></center>
 <img src="assets/images/desktop-view.jpg">
