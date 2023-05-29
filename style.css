@@ -132,7 +132,7 @@ section{
 .home-text h1{
     font-family: 'Dosis', sans-serif;
     font-size:var(--h1-font);
-    background: linear-gradient(to right, white, var(--main-color));
+    background: linear-gradient(to right, white,white, var(--main-color));
 			-webkit-text-fill-color: transparent;
 			-webkit-background-clip: text;
     font-weight: 800;
