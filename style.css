@@ -382,8 +382,12 @@ span{
     font-size:23px;
     padding: 9px;
     border-radius: 0.8rem;
+    transition: ease .50s;
 }
-
+.scroll-btn i:hover{
+    bottom: 2.6rem;
+    transition: all ease .50s;
+}
 /* Media Query */
 
 @media (max-width:1600px){
