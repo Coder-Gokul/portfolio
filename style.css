@@ -131,7 +131,7 @@ section{
 .home-text h1{
     font-family: 'Dosis', sans-serif;
     font-size:var(--h1-font);
-    color: var(--text-color);
+    color: var(--main-color);
     font-weight: 800;
     margin-bottom: 20px;
     letter-spacing: 2px;
@@ -324,6 +324,9 @@ span{
     color: var(--text-color);
     border-bottom: 2px solid var(--text-color);
 }
+.right-contact span{
+    color: var(--main-color);
+}
 .right-contact p{
     color: var(--other-color);
     font-size: var(--p-font);
@@ -395,6 +398,9 @@ span{
     header.sticky{
         padding: 8px 4%;
     }
+    .service h4{
+        font-size: 19px;
+       }
 }
 
 @media (max-width:1200px) {
@@ -403,6 +409,9 @@ span{
         background-position:calc(100%);
         background-size: calc(60%);  
     }
+    .service h4{
+        font-size: 17px;
+       }
     .navlist a{
         margin: 0 20px;
     }
@@ -417,6 +426,9 @@ span{
         background-position:calc(100%);
         background-size: calc(70%); 
     }
+    .service h4{
+        font-size: 18px;
+       }
     .about{
         grid-template-columns: 1fr;
     }
@@ -450,6 +462,9 @@ span{
         background-position:calc(150%);
         background-size: calc(80%); 
     }
+    .service h4{
+        font-size: 14px;
+       }
     #menu-icon{
         display: block;
     }
@@ -524,6 +539,9 @@ span{
     }
    .about-text{
     text-align: center;
+   }
+   .service h4{
+    font-size: 14px;
    }
     .home-text h4{
         font-size: .9rem;
